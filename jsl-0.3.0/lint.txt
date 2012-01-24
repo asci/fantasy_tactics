@@ -1,0 +1,30 @@
+JavaScript Lint 0.3.0 (JavaScript-C 1.5 2004-09-24)
+Developed by Matthias Miller (http://www.JavaScriptLint.com)
+
+server.js
+D:\sites\fh_js\server.js(49): lint warning: empty statement or extra semicolon
+	};
+.........^
+
+D:\sites\fh_js\server.js(51): lint warning: empty statement or extra semicolon
+};
+.^
+
+D:\sites\fh_js\server.js(59): lint warning: comparisons against null, 0, true, false, or an empty string allowing implicit type conversion (use === or !==)
+var host = process.env['MONGO_NODE_DRIVER_HOST'] != null ? process.env['MONGO_NODE_DRIVER_HOST'] : 'localhost';
+.........................................................^
+
+D:\sites\fh_js\server.js(60): lint warning: comparisons against null, 0, true, false, or an empty string allowing implicit type conversion (use === or !==)
+var port = process.env['MONGO_NODE_DRIVER_PORT'] != null ? process.env['MONGO_NODE_DRIVER_PORT'] : mongo.Connection.DEFAULT_PORT;
+.........................................................^
+
+D:\sites\fh_js\server.js(95): lint warning: comparisons against null, 0, true, false, or an empty string allowing implicit type conversion (use === or !==)
+			if (0 == walkable[target_x][target_y]) { 
+.............................................................^
+
+D:\sites\fh_js\server.js(134): lint warning: missing break statement for last case in switch
+	}
+........^
+
+
+0 error(s), 6 warning(s)

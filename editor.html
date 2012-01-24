@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<link rel="stylesheet" href="./main.css">
+		<style type="text/css">
+		body, html {
+			padding: 0;
+			margin: 0;
+		}
+		#left {
+			float:left;
+			width:75%;
+		}
+		#right {
+			float:left;
+			width:24%;
+		}
+		
+		#oncanvas {
+			position:absolute;
+			top: 50px;
+			left: 200px;
+			width: 300px;
+			background-color: #33cb67;
+			text-align:center;
+			display:none;
+		}
+		#shop {
+			position:absolute;
+			top: 100px;
+			left: 150px;
+			width: 400px;
+			background-color: #33cb67;
+			text-align:center;
+			display:none;
+		}
+		
+		#bottom {
+			position:absolute;
+			top: 480px;
+			left: 15px;
+			width: 700px;
+			height: 120px;
+			background-color: #33cb67;
+			text-align:center;
+		}
+		#buyEnery{
+			position:absolute;
+			top: 150px;
+			left: 200px;
+			width: 300px;
+			background-color: #33cb67;
+			text-align:center;
+			display:none;
+		}
+		#top {
+			p1osition:absolute;
+			top: 0px;
+			left: 0px;
+			width: 730px;
+			height: 20px;
+			background-color: #33cb67;
+		}
+		#top * {
+			display: inline;
+		}
+		</style>
+		
+		<title>Editor</title>
+		<script src="./jquery.js"></script>
+		<script src="./jquery.json-2.3.min.js"></script>
+		<script src="./editor.js"></script>
+	</head>
+	<body>
+		<div id="top">
+			<p>FPS</p><p id="fps">0</p>
+		</div>
+		<div id="left">
+			<canvas id="game"> </canvas>
+		</div>
+			  <div id="bottom">
+				  <button id="new" name="new">Show code</button>
+				  <button id="reset" name="reset">Reset cursor</button>
+				  <button id="image" name="image">Change image</button>
+				  <button id="type" name="type">Change type</button>
+				  <button id="decor" name="decor">Change decor</button>
+				  <button id="border" name="border">Change border</button>
+				  <button id="respawn" name="respawn">Mark as respawn</button>
+				  <button id="open_map" name="open_map">Open map</button>
+			  </div>
+		<div id="right">
+				<p id="info"></p>
+		</div>
+	</body>
+</html>

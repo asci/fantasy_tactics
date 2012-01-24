@@ -1,0 +1,46 @@
+#left {
+	float:left;
+	width:75%;
+}
+#right {
+	float:left;
+	width:24%;
+}
+
+#oncanvas {
+	position:absolute;
+	top: 50px;
+	left: 200px;
+	width: 300px;
+	background-color: #33cb67;
+	text-align:center;
+	display:none;
+}
+#shop {
+	position:absolute;
+	top: 100px;
+	left: 150px;
+	width: 400px;
+	background-color: #33cb67;
+	text-align:center;
+	display:none;
+}
+
+#bottom {
+	position:absolute;
+	top: 480px;
+	left: 15px;
+	width: 700px;
+	height: 120px;
+	background-color: #33cb67;
+	text-align:center;
+}
+#buyEnery{
+	position:absolute;
+	top: 50px;
+	left: 200px;
+	width: 300px;
+	background-color: #33cb67;
+	text-align:center;
+	display:none;
+}

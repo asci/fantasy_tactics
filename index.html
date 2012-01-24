@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">	
+		<link rel="stylesheet" href="./main.css">
+		<style type="text/css">
+		body, html {
+			padding: 0;
+			margin: 0;
+		}
+		#left {
+			float:left;
+			width:75%;
+		}
+		#right {
+			float:left;
+			width:24%;
+		}
+		
+		#oncanvas {
+			position:absolute;
+			top: 50px;
+			left: 200px;
+			width: 300px;
+			background-color: #33cb67;
+			text-align:center;
+			display:none;
+		}
+		#shop {
+			position:absolute;
+			top: 100px;
+			left: 150px;
+			width: 400px;
+			background-color: #33cb67;
+			text-align:center;
+			display:none;
+		}
+		
+		#bottom {
+			position:absolute;
+			top: 480px;
+			left: 15px;
+			width: 700px;
+			height: 120px;
+			background-color: #33cb67;
+			text-align:center;
+		}
+		#buyEnery{
+			position:absolute;
+			top: 150px;
+			left: 200px;
+			width: 300px;
+			background-color: #33cb67;
+			text-align:center;
+			display:none;
+		}
+		#top {
+			position:absolute;
+			top: 0px;
+			left: 0px;
+			width: 730px;
+			height: 20px;
+			background-color: #33cb67;
+		}
+		#top * {
+			display: inline;
+		}
+		</style>
+		
+		<title>Canvas 1</title>
+		<script src="./jquery.js"></script>
+		<script src="./jquery.json-2.3.min.js"></script>
+		<script src="./application.js"></script>
+	</head>
+	<body>
+		<div id="top">
+			<p>FPS</p><p id="fps">0</p>
+		</div>
+		<div id="left">
+			<canvas id="game"> </canvas>
+		</div>
+			  <div id="shop">
+				<h1>Shop!</h1>
+				<p> Thera our shop...</p>
+				  <button id="humanHouse" name="humanHouse"><img width="72px" src="./sprites/humanHouse.png"/> <br />Human house</button>
+				  <button id="elvenHouse" name="elvenHouse"><img width="72px" src="./sprites/elvenHouse.png"/> <br />Elven house</button>
+				  <button id="dwarvenHouse" name="dwarvenHouse"><img width="72px" src="./sprites/dwarvenHouse.png"/> <br />Dwarven house</button>
+				  <button id="altar" name="altar"><img width="72px" src="./sprites/altar1.png"/> <br />Altar Of Magic</button>
+				  <button id="barracks" name="barracks"><img width="72px" src="./sprites/barracks.png"/> <br />Barracks</button>
+			      <br /><button class="close" name="close">Okay</button>
+			  </div>
+			  <div id="bottom">
+				  <button id="shopBtn" name="shopBtn">Shop</button>
+				  <button id="zoomin" name="zoomin">Zoom in</button>
+				  <button id="zoomout" name="zoomout">Zoom out</button>
+				  <button id="fullscreen" name="fullscreen">Fullscreen</button>
+				  <button id="new" name="new">New</button>
+				  <button id="open_map" name="open_map">Open map</button>
+			  </div>
+			  <div id="buyEnery">
+				<p> Not enough energy...</p>
+					<button id="buyEnergyBtn" name="buyEnergyBtn">Buy more energy!</button>
+					<button class="close" name="close">Okay</button>
+			  </div>
+			  <div id="oncanvas">
+				<p> Train new units</p>
+				<button id="normal" name="normal">Train normal</button>
+				<button id="express" name="express">Train express</button>
+				<button id="instant" name="instant">Instant train!</button>
+				<button class="close" name="close">Okay</button>
+			  </div>
+		<div id="right">
+				<p id="info"></p>
+		</div>
+	</body>
+</html>
